@@ -21,5 +21,7 @@ void main(){
     print("You are not an adult");
   }
 
-  
+  for(int i=0; i<=10; i++){
+    print(i);
+  }
 }
