@@ -1,6 +1,6 @@
 class bike{
-  int Tyres = 2;
-  int model = 2020;
+  int Tyres = ;
+  int model = ;
 
   displayInfo(){
     print(' Bike has $Tyres Tyres and model of $model');
@@ -9,5 +9,7 @@ class bike{
 
 void main(){
   bike bike1 = bike();
+  bike1.Tyres = 2;
+  bike1.model = 2020;
   bike1.displayInfo();
 }
