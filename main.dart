@@ -39,11 +39,14 @@ void greetUser (String namee, int age){
 };
 
 greetUser("Suleman",20);
-*/
+
 
 int addNumbers(int a, int b){
-  return a+b;
-}
-int result = addNumbers(10, 20);
-print(result);
+  return a * b;
+};
+
+int result = addNumbers(10, 5);
+print(result);  */
+
+int num (int a, int b) => a+b;
 }
