@@ -49,4 +49,6 @@ int result = addNumbers(10, 5);
 print(result);  */
 
 int num (int a, int b) => a+b;
+
+print(num(10,20));
 }
