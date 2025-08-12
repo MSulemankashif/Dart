@@ -18,8 +18,11 @@ class Car extends Vehicle{
 }
 
 void main(){
+  // Object of a Class
   Car myCar = Car();
+  // Property
   myCar.brand = "Toyota";
+  myCar.doors =3;
 
   myCar.start();
   myCar.displayInfo();
