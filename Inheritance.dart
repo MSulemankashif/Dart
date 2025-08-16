@@ -1,24 +1,23 @@
-class Vehicle{
-  late String brand;
+class Animal{
+  String name = "Animal";
+  int legs = 4;
+  String eat = "Grass";
 
-  void Start(){
-    print("$brand is a brand of a Vehicle");
+
+}
+
+class goat extends Animal{
+  String Voice =  "Meee Meee";
+
+  void info(){
+    print("Animal Name is $name and has $legs Legs and eats $eat and his voice is $Voice");
   }
 }
 
-class Car extends Vehicle{
-  int doors = 4;
-
-  void info(){
-    print("Brand is $brand and has $doors doors");
-  }
-} 
-
 void main(){
-Car myCar = Car();
-myCar.brand = "Honda";
-myCar.doors = 4;
+  goat Goat = goat();
+  Goat.name= "Goat";
+  Goat.Voice="Meee Meee";
 
-
-myCar.info();
+Goat.info();
 }
