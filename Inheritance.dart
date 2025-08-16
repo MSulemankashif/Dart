@@ -1,8 +1,7 @@
-class Vehicle {
+class Vehicle{
   late String brand;
 
-
-  void start(){
+  void Start(){
     print("$brand is a brand of a Vehicle");
   }
 }
@@ -10,20 +9,16 @@ class Vehicle {
 class Car extends Vehicle{
   int doors = 4;
 
-  // Declaring Method
-
-  void displayInfo(){
-    print("Brand: $brand, Doors: $doors");
+  void info(){
+    print("Brand is $brand and has $doors doors");
   }
-}
+} 
 
 void main(){
-  // Object of a Class
-  Car myCar = Car();
-  // Property
-  myCar.brand = "Toyota";
-  myCar.doors =3;
+Car myCar = Car();
+myCar.brand = "Honda";
+myCar.doors = 4;
 
-  myCar.start();
-  myCar.displayInfo();
+
+myCar.info();
 }
