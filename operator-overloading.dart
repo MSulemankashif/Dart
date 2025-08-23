@@ -1,16 +1,29 @@
-class Point{
-  int x, y;
-Point(this.x, this.y);
+class Animal{
 
-Point operator + (Point other){
-  return Point(x + other.x, y + other.y);
+  void sound(){
+    print("Animal has a sound");
+  }
 }
+
+class Dog extends Animal{
+  @override
+  void sound(){
+    print("Dog barks");
+  }
+}
+
+class Cat extends Animal{
+@override
+  void sound(){
+    print("cat Meows");
+  }
 }
 
 void main(){
-  var p1 = Point(2,3);
-  var p2 = Point(4,5);
 
-  var p3 = p1+p2;
-  print("x: ${p3.x}, y: ${p3.y}");
+  Animal animal1 = Dog();
+  Animal animal2 = Cat();
+
+  animal1.sound();
+  animal2.sound();
 }
