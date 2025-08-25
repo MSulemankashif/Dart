@@ -1,30 +1,37 @@
-// (Method Overriding) Run Time Polymorphism
-class Animal{
-  void sound(){
-    print("Animal Makes a sound");
-  }
+class Vehicle {
+//   Method
+ void move(){
+   print("Vehicle is moving");
+ } 
 }
-// Dog Class
-class Dog extends Animal{
-  @override
-  void sound(){
-    print("Dog Barks");
+
+class Car extends Vehicle{
+  
+  void move(){
+    print("Car is Running on the road");
   }
 }
 
-// Cat Class
-class Cat extends Animal{
-  @override
-  void sound(){
-    print("Cat meows");
+class Bike extends Vehicle{
+  
+  void move(){
+    print("Bike is running on 2 tyres");
+  }
+}
+
+class Plane extends Vehicle{
+  
+  void move(){
+    print("Plane is flying in the sky");
   }
 }
 
 void main(){
-Animal a1 = Dog();
-Animal a2 = Cat();
-
-a1.sound();
-a2.sound();
+  Vehicle v1 = Car();
+  Vehicle v2 = Bike();
+  Vehicle v3 = Plane();
+  
+  v1.move();
+  v2.move();
+  v3.move();
 }
-
