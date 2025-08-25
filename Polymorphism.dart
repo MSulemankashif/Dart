@@ -2,7 +2,7 @@ class Vehicle {
 //   Method
  void move(){
    print("Vehicle is moving");
- } 
+ }
 }
 
 class Car extends Vehicle{
