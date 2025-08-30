@@ -21,6 +21,9 @@ class bankAccount {
       print("Insufficient Balance");
     }
   }
+  getBalance(){
+    return _balance;
+  }
 }
 
 void main(){
@@ -28,5 +31,5 @@ void main(){
   account.deposit(45000);
   account.withdraw(15000);
 
-  print(account._balance); 
+  print("Your Balance is: ${account.getBalance()}");
 }
