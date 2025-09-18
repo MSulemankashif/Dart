@@ -1,36 +1,34 @@
-// Interface
-// Har Class ko Ye pay method banana hi hoga jo Issay Implement hogi
-abstract class Payment{
- void pay(double payment); 
+abstract class Payment {
+  void pay(double amount);
 }
 
-class Jazzcash implements Payment{
+class Jazzcash implements Payment {
   @override
-  void pay(double amount){
-    print("Paid $amount using Jazzcash");
+  void pay(double amount) {
+    print("Paid \$${amount} using Jazzcash");
   }
 }
 
-class Easypaisa implements Payment{
+class PayPal implements Payment {
   @override
-  void pay(double amount){
-    print("Paid $amount using Easypaisa");
+  void pay(double amount) {
+    print("Paid \$${amount} using PayPal");
   }
 }
 
-class PayPal implements Payment{
+class Easypaisa implements Payment {
   @override
-  void pay(double amount){
-    print("Paid $amount using PayPal");
+  void pay(double amount) {
+    print("Paid \$${amount} using Easypaisa");
   }
 }
 
 void main(){
-Payment p1 = Jazzcash();
-Payment p2 = Easypaisa();
-Payment p3 = PayPal();
+  Payment p1 = Jazzcash();
+  Payment p2 = PayPal();
+  Payment p3 = Easypaisa();
 
-p1.pay(1000);
-p2.pay(2000);
-p3.pay(3000);
+  p1.pay(1000);
+  p2.pay(2000);
+  p3.pay(3000);
 }
